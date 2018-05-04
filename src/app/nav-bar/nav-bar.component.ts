@@ -8,7 +8,7 @@ import { Category } from '../models/category.model';
 })
 export class NavBarComponent  {
 
-  constructor() { }
+@Input () childButtonCategory: Category[];
 
 
 
