@@ -1,10 +1,11 @@
 <nav>
   <div class="row">
-    <img class="col-"src="../assets/logo.jpg" alt="Roland logo">
+    <img class="col-1"src="../assets/logo.jpg" alt="Roland logo">
     <div *ngFor='let currentCategory of childButtonCategory'>
-      <div class="col">
+      <div class="col button">
         <p>{{currentCategory.type}}</p>
       </div>
     </div>
+    <input type="text" name="search" value=""placeholder="search">
   </div>
 </nav>
