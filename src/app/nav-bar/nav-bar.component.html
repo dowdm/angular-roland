@@ -1,8 +1,10 @@
 <nav>
-  <img src="../assets/logo.jpg" alt="Roland logo">
-  <ul *ngFor='let currentCategory of childButtonCategoryArray'>
-    <li(mouseover)="dropDrown(currentCategory)">{{currentCategory.name}}
-  </li>
+  <div class="row">
+    <img class="col-"src="../assets/logo.jpg" alt="Roland logo">
+    <div *ngFor='let currentCategory of childButtonCategory'>
+      <div class="col">
+        <p>{{currentCategory.type}}</p>
+      </div>
+    </div>
   </div>
-</div>
 </nav>
