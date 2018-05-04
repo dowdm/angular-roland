@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Category } from '../models/category.model';
 
 @Component({
@@ -7,8 +7,7 @@ import { Category } from '../models/category.model';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent  {
-
-@Input () childButtonCategory: Category[];
+  @Input () childButtonCategory: Category[];
 
 
 
