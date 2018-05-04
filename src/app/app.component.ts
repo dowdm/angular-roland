@@ -14,8 +14,8 @@ export class AppComponent {
 
   masterProductArray: Product[]=[
     new Product("Piano", "Digital Piano", "FP-90", 999, "Our Flagship Digital Piano", "lorehahsofdgh asfugh asiuf goasuaisugh asf giaufshg ialfh g", "https://static.roland.com/assets/images/products/categories/rct_pianos.jpg"),
-    new Product("Guitar", "Electric Guitar", "GR-70", 999, "Our Flagship Electric Guitar", "lorehahsofdgh asfugh asiuf goasuaisugh asf giaufshg ialfh g", "https://static.roland.com/assets/images/products/categories/rct_pianos.jpg"),
-    new Product("AIRA and DJ", "Performance Sampler", "SP-404", 999, "Our Flagship Digital Piano", "lorehahsofdgh asfugh asiuf goasuaisugh asf giaufshg ialfh g", "https://static.roland.com/assets/images/products/categories/rct_pianos.jpg")
+    new Product("Guitar", "Electric Guitar", "GR-70", 888, "Our Flagship Electric Guitar", "lorehahsofdgh asfugh asiuf goasuaisugh asf giaufshg ialfh g", "https://static.roland.com/assets/images/products/categories/rct_pianos.jpg"),
+    new Product("AIRA and DJ", "Performance Sampler", "SP-404", 777, "Our Flagship Performance Sampler", "lorehahsofdgh asfugh asiuf goasuaisugh asf giaufshg ialfh g", "https://static.roland.com/assets/images/products/categories/rct_pianos.jpg")
   ];
 
   masterButtonCategory: Category[] = [
@@ -34,7 +34,7 @@ export class AppComponent {
   ];
 
   masterNewsArray: News[] =[
-    new News('New Gear at NAMM', 'This winter NAMM brought 2 new dum machines to the stage in Anaheim', "https://static.bhphoto.com/images/images500x500/roland_tr_8s_rhythm_performer_1520225178000_1393506.jpg", 'sdkuufh so;duf suhd fsudhf iusdh ofsd oifh soidhf lsdh fkhsd '),
+    new News('New Gear at NAMM', 'This winter NAMM brought 2 new dum machines to the stage in Anaheim', "https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-300__bg-ffffff__q-85__ha-687cad0ea7629c90__hmac-eb49b60d002e0f1c1cdceae7fd67c45de8512264/images/items/350/MX1.jpg.auto.webp", 'sdkuufh so;duf suhd fsudhf iusdh ofsd oifh soidhf lsdh fkhsd '),
     new News('Roland Gives to Charity', 'This winter NAMM brought 2 new dum machines to the stage in Anaheim', "https://static.bhphoto.com/images/images500x500/roland_tr_8s_rhythm_performer_1520225178000_1393506.jpg", 'sdkuufh so;duf suhd fsudhf iusdh ofsd oifh soidhf lsdh fkhsd '),
     new News('Noise Art', 'This winter NAMM brought 2 new dum machines to the stage in Anaheim', 'https://static.bhphoto.com/images/images500x500/roland_tr_8s_rhythm_performer_1520225178000_1393506.jpg' , 'sdkuufh so;duf suhd fsudhf iusdh ofsd oifh soidhf lsdh fkhsd ')
   ];

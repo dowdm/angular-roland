@@ -4,4 +4,5 @@ img{
 
 #main{
   height: 800px;
+  position: relative;
 }

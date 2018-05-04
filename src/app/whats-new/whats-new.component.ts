@@ -8,5 +8,14 @@ import { News } from '../models/news.model'
 export class WhatsNewComponent {
 
   @Input () childNewsArray: News[];
+  @Output () clickSender = new EventEmitter();
+  selectedNews = null;
 
+  viewDetails(currentNews){
+    if(this.selectedNews === null) {
+      this.selectedNews = currentNews;
+    } else {
+      this.selectedNews = null;
+    }
+  }
 }
