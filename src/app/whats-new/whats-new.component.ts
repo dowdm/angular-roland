@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { News } from '../models/news.model'
 @Component({
   selector: 'app-whats-new',
   templateUrl: './whats-new.component.html',
   styleUrls: ['./whats-new.component.css']
 })
-export class WhatsNewComponent implements OnInit {
+export class WhatsNewComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input () childNewsArray: News[];
 
 }
