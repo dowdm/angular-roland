@@ -2,7 +2,7 @@
 
 #### By Matt Dowdney
 
-## This is a clone of the Roland US website from https://www.roland.com/us/ as viewd from a medium sized viewport(desktop/laptop).  
+## This is a clone of the Roland US website from https://www.roland.com/us/ as viewed from a medium sized viewport(desktop/laptop).  
 
 ## Specifications
 
@@ -28,7 +28,7 @@
 * Jasmine
 * Karma
 * Babel
-* ANgular
+* Angular
 
 ## License
 
