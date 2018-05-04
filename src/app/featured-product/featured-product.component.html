@@ -1,10 +1,14 @@
-<div class="row">
-  <div *ngFor='let currentProduct of childProductArray' name='featured-product'>
-    <div class="col-md-4">
+<div class="row product">
+  <div *ngFor='let currentProduct of childProductArray' name='featured-product' id="productCol">
+    <div class="col" (click)="viewDetails(currentProduct)">
       <img src={{currentProduct.image}} alt="...">
       <p>Featured Product</p>
       <h3>{{currentProduct.model}}</h3>
       <p>{{currentProduct.title}}</p>
+      <div *ngIf="selectedProduct === currentProduct">
+        <p>{{currentProduct.description}}</p>
+        <p>MSRP: ${{currentProduct.msrp}}</p>
+      </div>
     </div>
   </div>
 </div>
