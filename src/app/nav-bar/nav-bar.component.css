@@ -16,6 +16,7 @@ nav{
 .button:hover{
   background-color: darkgray;
   color: white;
+  cursor: pointer;
 }
 input{
   border-radius: 20px;
