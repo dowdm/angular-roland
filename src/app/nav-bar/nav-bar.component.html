@@ -1,11 +1,13 @@
-<nav>
-  <div class="row">
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
     <img class="col-1"src="https://static.roland.com/global/css/fonts/roland.svg" alt="Roland logo">
-    <div *ngFor='let currentCategory of childButtonCategory'>
-      <div class="col button">
-        <p>{{currentCategory.type}}</p>
-      </div>
-    </div>
-    <input type="text" name="search" value=""placeholder="search">
   </div>
+  <a routerLink="products">Products</a>
+  <a routerLink="community">Community</a>
+  <a routerLink="support">Support</a>
+  <a routerLink="artists">Artists</a>
+  <a routerLink="blog">Blog</a>
+  <a routerLink="news">New and Events</a>
+  <a routerLink="login">Login</a>
+  <input type="text" name="search" value=""placeholder="search">
 </nav>
