@@ -1,0 +1,72 @@
+{ "products": [{
+    "manufacturer": "Roland",
+    "type": "Drums",
+    "subtype": "V-Drums",
+    "model":"TD-25KVX",
+    "msrp":"999",
+    "title":"Dynamic, Expressive Playability and Quick Customization",
+    "description":"With the TD-25KVX, serious drummers can tap into high-end V-Drums playability in a mid-level kit, with the strong visual presence and feel to make every player feel at home. Equipped with a sound engine derived from the TD-30 V-Drums series, the TD-25KVX delivers all the acclaimed expressiveness that makes Roland’s top-line V-Drums the undisputed choice of pro players everywhere. A streamlined interface makes it easy to create personalized kits, while the built-in audio recording function lets you capture drum performances for evaluation and sharing. Other premium features include a large 12-inch dual-mesh snare pad with positional sensing, which fits to a regular snare drum stand for flexible positioning, 10-inch mesh-head pads for toms, delivering a more-natural playing feel and VH-11 V-Hi-Hat for playing with authentic hi-hat techniques. The KD-180 Bass Drum features an 18-inch genuine acoustic shell with built-in pad system, which delivers incredible acoustic feel and distinctive ‘acoustic kit’ looks.",
+    "image":"https://static.roland.com/assets/images/products/main/td-25kvx_front_tn.jpg",
+    "id": "1"
+    }, {
+      "manufacturer": "Roland",
+      "type": "Drums",
+      "subtype": "V-Drums",
+      "model":"TD-17 Series",
+      "msrp":"699",
+      "title":"Become a Better Drummer, Faster",
+      "description":"When you’re serious about drumming, you need a kit to match your ambition. The V-Drums TD-17 series lets your technique shine through, backed up with training tools to push you further. Combining a TD-50-class sound engine with newly developed pads results in an affordable electronic drum kit that’s authentically close to playing acoustic drums – accurately mirroring the physical movement, stick coordination and hand/foot control that every drummer needs. Meanwhile, an array of built-in coaching functions will track your technique, measure your progress and increase your motivation. Becoming a better drummer is still hard work, but the TD-17 can help you get there.",
+      "image":"https://static.roland.com/assets/images/products/main/td-17kvx_angle_1_tn.jpg",
+      "id": "2"
+  }, {
+    "manufacturer": "Roland",
+    "type": "Production",
+    "subtype": "Rhythm Performer",
+    "model":"TR-8S",
+    "msrp":"899",
+    "title":"The performance tuned TR-8S combines stereo sample playback with iconic Roland drum sounds and deep editing parameters to allow you to craft your dream drum kits.",
+    "description":"The TR-8S comes loaded with the largest, most authentic collection of TR drum machines available. The powerful new processor gives our next-generation ACB models a whole new level of detail and nuance, giving you that classic Roland boom, snap, and sizzle. And now you can incorporate preset and custom samples, creating unique hybrid and layered kits, and enhance them with specialized effects that inject professional sound design into the TR formula.",
+    "image":"https://static.roland.com/assets/images/products/main/tr-8s_tn.jpg",
+    "id": "3"
+}, {
+  "manufacturer": "Roland",
+  "type": "Piano",
+  "subtype": "Digital Piano",
+  "model":"GP609",
+  "msrp":"1899",
+  "title":"The Grand Piano That Fuses Tech with Tradition",
+  "description":"The GP609 is a grand piano without compromise. You can experience the performance of a traditional acoustic grand, whose sound has been at the heart of music for over 300 years. And you also get to explore the endless creative possibilities offered by the latest digital technology. Since creating the world’s first touch-sensitive electronic piano in 1974, Roland has become a leader in digital piano innovation – and the new GP609 embodies our belief that advanced technology and know-how can take your music further.",
+  "image":"https://static.roland.com/assets/images/products/main/gp609_tn.jpg",
+  "id": "4"
+}, {
+  "manufacturer": "Roland",
+  "type": "Pro-Audio",
+  "subtype": "Personal Monitor",
+  "model":"PM-200",
+  "msrp":"399",
+  "title":"High-Resolution Sound Monitoring, Fine-Tuned for Roland's V-Drums",
+  "description":"Delivering rich, dynamic sound in a streamlined package, the PM-200 is the ultimate monitoring solution for Roland’s V-Drums. Packing 180 watts of power, the PM-200 features a custom full-range speaker system and rugged cabinet specially optimized for reproducing the famously expressive V-Drums sound and response. And with integrated mixing and direct output capabilities, it’s easy to interface with other devices at home or on stage.",
+  "image":"https://static.roland.com/assets/images/products/main/pm-200_tn.jpg",
+  "id": "5"
+}, {
+  "manufacturer": "Roland",
+  "type": "Pro-Video",
+  "subtype": "iOS App",
+  "model":"4XCAMERA",
+  "msrp":"FREE",
+  "title":"The Easy Way to Create Split-Screen Music Videos on iPhone or iPad",
+  "description":"Roland’s 4XCAMERA is a unique iOS app that makes it easy to create impressive music videos with up to four performances split on the screen. You start by capturing one video performance to the app, which becomes your guide. Then sing or play along and capture up to three more performances, adding new parts on each pass. As you perform, sound is recorded via the device’s built-in mic or through a connected audio capture device. With just 4XCAMERA and an iPhone or iPad, it’s a breeze to get creative and take your video performances to new levels. And by sharing 4XCAMERA video projects through cloud-based storage, multiple musicians can use the app to contribute performances to your songs from anywhere in the world! Version 1.1 of 4XCAMERA provides integrated access to a variety of free video clips featuring live drummers, allowing you to spice up your video performances with on-demand backing. 4XCAMERA is a free download from the App Store, and supports capturing up to two performances. An upgrade to full functionality is available via a small in-app purchase.",
+  "image":"https://static.roland.com/assets/images/products/main/4xcamera_tn.jpg",
+  "id": "6"
+}, {
+  "manufacturer": "Roland",
+  "type": "Recording",
+  "subtype": "High Resolution Audio Recorder",
+  "model":"R-07",
+  "msrp":"399",
+  "title":"Stylish, Ultra-Portable Recorder with Wireless Listening and Remote Control",
+  "description":"The R-07 packs mission-critical recording features into a stylish and ultra-portable device that goes anywhere life takes you. High-resolution audio, one-touch Scene memory, and Hybrid Limiting ensure great sounding recordings no matter what the situation. And wireless listening and remote control mean you can record with less wires in more places.",
+  "image":"https://static.roland.com/assets/images/products/main/r-07_b_tn.jpg",
+  "id": "7"
+} ]
+}
