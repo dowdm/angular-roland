@@ -9,6 +9,7 @@ import { BlogComponent } from './blog/blog.component';
 import { NewsComponent } from './news/news.component';
 import { LoginComponent } from './login/login.component';
 
+
 const appRoutes: Routes = [
   {
     path: '',
