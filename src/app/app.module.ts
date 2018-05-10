@@ -9,7 +9,16 @@ import { FeaturedProductComponent } from './featured-product/featured-product.co
 import { FeaturedVideoComponent } from './featured-video/featured-video.component';
 import { WhatsNewComponent } from './whats-new/whats-new.component';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -22,7 +31,12 @@ import { ProductCategoriesComponent } from './product-categories/product-categor
     ProductCategoriesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // FormsModule,
+    // HttpModule,
+    // routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
