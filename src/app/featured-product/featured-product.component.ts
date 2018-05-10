@@ -1,15 +1,26 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import {Product} from '../models/product.model';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { ProductService } from '../product.service'
 
 @Component({
   selector: 'app-featured-product',
   templateUrl: './featured-product.component.html',
-  styleUrls: ['./featured-product.component.css']
+  styleUrls: ['./featured-product.component.css'],
+   providers: [ProductService]
 })
-export class FeaturedProductComponent {
-  @Input () childProductArray: Product[];
+export class FeaturedProductComponent implements OnInit{
+
   @Output () clickSender = new EventEmitter();
   selectedProduct = null;
+
+constructor(private productService: ProductService) { }
+
+  products: FirebaseListObservable<any[]>;
+
+  ngOnInit() {
+      this.products = this.productService.getProducts();
+    }
 
   viewDetails(currentProduct){
     if(this.selectedProduct === null) {

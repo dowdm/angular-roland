@@ -1,5 +1,5 @@
 <div class="row product">
-  <div *ngFor='let currentProduct of childProductArray' name='featured-product' id="productCol">
+  <div *ngFor='let currentProduct of products| async' name='featured-product' id="productCol">
     <div class="col" (click)="viewDetails(currentProduct)">
       <img src={{currentProduct.image}} alt="...">
       <p>Featured Product</p>
