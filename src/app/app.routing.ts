@@ -8,7 +8,7 @@ import { ArtistsComponent } from './artists/artists.component';
 import { BlogComponent } from './blog/blog.component';
 import { NewsComponent } from './news/news.component';
 import { LoginComponent } from './login/login.component';
-
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -42,6 +42,10 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'products/:id',
+    component: ProductDetailComponent
   }
 ];
 

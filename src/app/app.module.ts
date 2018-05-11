@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MainCarouselComponent } from './main-carousel/main-carousel.component';
 import { FeaturedProductComponent } from './featured-product/featured-product.component';
 import { FeaturedVideoComponent } from './featured-video/featured-video.component';
 import { WhatsNewComponent } from './whats-new/whats-new.component';
-import { ProductCategoriesComponent } from './product-categories/product-categories.component';
-import { masterFirebaseConfig } from './api-keys';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ProductsComponent } from './products/products.component';
 import { CommunityComponent } from './community/community.component';
 import { SupportComponent } from './support/support.component';
@@ -20,6 +22,9 @@ import { BlogComponent } from './blog/blog.component';
 import { NewsComponent } from './news/news.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductCategoriesComponent } from './product-categories/product-categories.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,12 +49,13 @@ export const firebaseConfig = {
     BlogComponent,
     NewsComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
-    // FormsModule,
-    // HttpModule,
+    FormsModule,
+    HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
