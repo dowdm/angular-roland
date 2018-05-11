@@ -1,5 +1,7 @@
 <div class="row product justify-content-around">
+  {{products.length}}
   <div *ngFor='let currentProduct of products| async'  name='featured-product' id="productCol">
+
     <div  class="col" (click)="viewDetails(currentProduct)">
       <img src={{currentProduct.image}} alt="...">
       <p>Featured Product</p>
