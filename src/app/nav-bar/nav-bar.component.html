@@ -10,7 +10,7 @@
   <a routerLink="news">New and Events</a>
   <!-- <a routerLink="login">Login</a> -->
       <li *ngIf="isLoggedIn">
-        <a>{{userName}}</a>
+        <a routerLink="login">{{userName}}</a>
         <a (click)="logout()">Log out</a>
       </li>
       <li *ngIf ="!isLoggedIn">
