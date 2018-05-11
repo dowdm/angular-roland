@@ -1,6 +1,10 @@
-<div>
-  <h3><em>{{productToDisplay?.image}}</em></h3>
-  <h2>{{productToDisplay?.title}}</h2>
-  <h4>{{productToDisplay?.description}}</h4>
-  <h6>Started by: {{productToDisplay?.model}}</h6>
+<div class="container">
+  <img src={{productToDisplay?.image2}} alt="">
+  <h3><em></em></h3>
+  <h3>{{productToDisplay?.type}}</h3>
+  <h2>{{productToDisplay?.subtype}}</h2>
+  <h1>{{productToDisplay?.model}}</h1>
+  <h4>{{productToDisplay?.title}}</h4>
+  <p>{{productToDisplay?.description}}</p>
+  <p id="price">MSRP ${{productToDisplay?.msrp}}</p>
 </div>
