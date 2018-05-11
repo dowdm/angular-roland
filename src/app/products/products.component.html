@@ -1,10 +1,13 @@
 
 <div *ngFor='let product of products| async' name='featured-product' id="productCol">
-  <div class="row product ">
-    <div class="col-12" (click)="goToDetailPage(product)">
-      <img src={{product.image}} alt="...">
-      <h3>{{product.model}}</h3>
-      <p>{{product.title}}</p>
+  <div class="card">
+    <div class="row product ">
+      <div class="col-12" (click)="goToDetailPage(product)">
+        <img src={{product.image2}} alt="...">
+        <h3>{{product.model}}</h3>
+        <h5>{{product.subtype}}</h5>
+        <p>{{product.title}}</p>
+      </div>
     </div>
   </div>
 </div>
