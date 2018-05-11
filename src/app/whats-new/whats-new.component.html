@@ -2,10 +2,10 @@
   <div *ngFor='let currentNews of childNewsArray' name='featured-news' id='newsCol'>
     <div class="col" (click)="viewDetails(currentNews)">
       <img src={{currentNews.image}} alt="picture">
-      <p>What's New</p>
+      <p><em>What's New</em></p>
       <h3>{{currentNews.headline}}</h3>
       <p>{{currentNews.summary}}</p>
-      <p>Click for more details..</p>
+      <h5>details..</h5>
     </div>
     <div *ngIf="selectedNews === currentNews">
       <p>{{currentNews.story}}</p>

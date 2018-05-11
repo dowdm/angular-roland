@@ -1,6 +1,17 @@
 #videoCol{
-width: 28%;
+margin-top: 30px;
+width: 30%;
+font: helvetica;
+margin-bottom: 10px;
 }
 img{
-  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h3{
+  color: grey;
 }

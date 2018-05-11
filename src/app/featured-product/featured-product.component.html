@@ -1,12 +1,13 @@
 <div class="row product justify-content-around">
   {{products.length}}
-  <div *ngFor='let currentProduct of products| async'  name='featured-product' id="productCol">
-
-    <div  *ngIf="currentProduct.id == 1 ||currentProduct.id == 4 || currentProduct.id == 5 "class="col" (click)="goToDetailPage(currentProduct)">
-      <img src={{currentProduct.image}} alt="...">
-      <p>Featured Product</p>
-      <h3>{{currentProduct.model}}</h3>
-      <p>{{currentProduct.title}}</p>
+  <div *ngFor='let currentProduct of products| async'  name='featured-product'  id="productCol" >
+    <div  *ngIf="currentProduct.id == 1 ||currentProduct.id == 2 || currentProduct.id == 3" (click)="goToDetailPage(currentProduct)">
+      <div class="col">
+        <img src={{currentProduct.image}} alt="...">
+        <p><em>Featured Product</em></p>
+        <h3>{{currentProduct.model}}</h3>
+        <p>{{currentProduct.title}}</p>
+      </div>
     </div>
   </div>
 </div>
