@@ -1,8 +1,18 @@
 <div class="container">
 <h2>Manage your Account</h2>
-<button type="button" name="button">Product Registration</button>
+<button type="button" name="button"(click)="regProduct()">Product Registration</button>
 <button type="button" name="button">Product Soundsets/Presets</button>
 <button type="button" name="button">Contact Us</button>
 <button type="button" name="button">Software/ Driver Downloads</button>
 <button type="button" name="button">Library</button>
+  <div *ngIf="register">
+    <form>
+      <h3 >Register A Product</h3>
+      <input #newSerial type="text" name="sn" placeholder="Serial Number" required>
+      <input #newDate type="date" name="date" required>
+      <input #newEmail type="text" name="email" placeholder="Email Address" required>
+      <input #newPlace type="text" name="place" placeholder="Place of Purchase" required>
+      <button (click)="submitRegister(); newSerial.value=''; newDate.value=''; newEmail.value=''; newPlace.value='';" type="button" name="button">Register Product</button>
+    </form>
+  </div>
 </div>
