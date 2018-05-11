@@ -15,10 +15,10 @@ img{
 h5:hover{
   cursor: pointer;
   color: blue;
+  font-style: italic;
 }
 
 
 h3{
   color: grey;
-  font-style: italic;
 }
