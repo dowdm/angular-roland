@@ -1,8 +1,11 @@
 img{
-  display: block;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 #main{
-  height: 800px;
+  width: 100%;
   position: relative;
 }

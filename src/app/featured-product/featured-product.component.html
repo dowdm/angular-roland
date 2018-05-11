@@ -1,6 +1,6 @@
-<div class="row product">
-  <div *ngFor='let currentProduct of products| async' name='featured-product' id="productCol">
-    <div class="col" (click)="viewDetails(currentProduct)">
+<div class="row product justify-content-around">
+  <div *ngFor='let currentProduct of products| async'  name='featured-product' id="productCol">
+    <div  class="col" (click)="viewDetails(currentProduct)">
       <img src={{currentProduct.image}} alt="...">
       <p>Featured Product</p>
       <h3>{{currentProduct.model}}</h3>

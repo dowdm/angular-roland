@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row justify-content-around">
   <div *ngFor='let currentNews of childNewsArray' name='featured-news' id='newsCol'>
     <div class="col" (click)="viewDetails(currentNews)">
       <img src={{currentNews.image}} alt="picture">

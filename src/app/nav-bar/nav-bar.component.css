@@ -7,13 +7,8 @@ nav{
   background-color: black;
   color: grey;
 }
-.button{
-  border-style: dashed;
-  border-color: white;
-  border-width: 0px 1px 0px 1px;
-}
 
-.button:hover{
+a:hover{
   background-color: darkgray;
   color: white;
   cursor: pointer;
@@ -22,4 +17,7 @@ input{
   border-radius: 20px;
   text-align: center;
   margin: 5px 10px 10px 10px;
+}
+a{
+  color: gray;
 }
