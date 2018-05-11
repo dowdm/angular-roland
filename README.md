@@ -18,7 +18,7 @@
 | Product | Selected  product should route to page of that product | Product-Details |
 | Authentication | User can dummy register a product (hollow function) | Login |
 
-To-do: Create a registration model and push actually registered devices to a database. 
+To-do: Create a registration model and push actually registered devices to a database.
 
 
 
@@ -51,7 +51,7 @@ export var masterFirebaseConfig = {
 
 * HTML
 * CSS _(Bootstrap 3.3.7)_
-* JavaScript _(jQuery 3.2.1)_
+* JavaScript
 * Node.js
 * Webpack
 * ESLint

@@ -5,6 +5,17 @@
 <button type="button" name="button">Contact Us</button>
 <button type="button" name="button">Software/ Driver Downloads</button>
 <button type="button" name="button">Library</button>
+<div class="">
+  <h2>Your Products</h2>
+  <div class="" *ngFor='let currentRegistry of userProductArray'>
+    <ul>
+      <li>Product: <p>Serial Number: {{currentRegistry.serial}}</p>
+      <p>Date of Purchase: {{currentRegistry.date}}</p>
+      <p>Email Address: {{currentRegistry.email}}</p>
+      <p>Place of Purchase: {{currentRegistry.place}}</p></li>
+    </ul>
+  </div>
+</div>
   <div *ngIf="register">
     <form>
       <h3 >Register A Product</h3>
@@ -12,7 +23,8 @@
       <input #newDate type="date" name="date" required>
       <input #newEmail type="text" name="email" placeholder="Email Address" required>
       <input #newPlace type="text" name="place" placeholder="Place of Purchase" required>
-      <button (click)="submitRegister(); newSerial.value=''; newDate.value=''; newEmail.value=''; newPlace.value='';" type="button" name="button">Register Product</button>
+      <button (click)="submitRegister(newSerial.value, newDate.value, newEmail.value, newPlace.value); newSerial.value=''; newDate.value=''; newEmail.value=''; newPlace.value='';" type="button" name="button">Register Product</button>
     </form>
+
   </div>
 </div>
