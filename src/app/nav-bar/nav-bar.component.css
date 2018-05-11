@@ -2,6 +2,11 @@ img{
   height: 50px;
   width: 100px;
 }
+img:hover{
+  background-color: darkgray;
+  color: white;
+  cursor: pointer;
+}
 nav{
   padding-top: 10px;
   background-color: black;
