@@ -13,13 +13,9 @@
 | Home | Homepage should display featured news| Root |
 | Home | Selected featured product should reveal product details | Root |
 | Home | Selected featured news should reveal featured news details | Root|
-
-## Future User Stories
-
-| View  | Feature | Component |
-| ----- | --- | --- |
-|
+| All | Nav-bar should route user to appropriate paths | Nav-bar |
 | Product | Selected featured product should route to page of that product | Product-Details |
+| Authentication | User can dummy register a product (hollow function) | Login |
 
 TO-DO: Implement Firebase database for Products, Implement Routing to Selected Product Details Paths, Clean and polish UI
 
