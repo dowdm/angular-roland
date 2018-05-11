@@ -14,16 +14,17 @@
 | Home | Selected featured product should reveal product details | Root |
 | Home | Selected featured news should reveal featured news details | Root|
 | All | Nav-bar should route user to appropriate paths | Nav-bar |
-| Product | Selected featured product should route to page of that product | Product-Details |
+| Home | Selected featured product should route to page of that product | Product-Details |
+| Product | Selected  product should route to page of that product | Product-Details |
 | Authentication | User can dummy register a product (hollow function) | Login |
 
-TO-DO: Implement Firebase database for Products, Implement Routing to Selected Product Details Paths, Clean and polish UI
 
 
 
 ## Setup/Installation Requirements
+* To view deployed site, visit: https://roland-us.firebaseapp.com/
 * To view project code, visit: https://github.com/dowdm/angular-roland.git
-* To view project, install nodejs, typescript and anglular cli. Then clone the project to your desktop from https://github.com/dowdm/angular-roland.git , navigating into the project folder from the command line. Run "npm install" from the command line and  build the database(see below). Finally  enter "ng serve --open" from the command line to open a browser and server, running the project.
+* To view project from build, install nodejs, typescript and anglular cli. Then clone the project to your desktop from https://github.com/dowdm/angular-roland.git , navigating into the project folder from the command line. Run "npm install" from the command line and  build the database(see below). Finally  enter "ng serve --open" from the command line to open a browser and server, running the project.
 
 1. This will require a Firebase database, so set up an account with them.
 2. Add a new project from the Firebase console, naming it roland-us.
