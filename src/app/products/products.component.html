@@ -1,9 +1,9 @@
 <div class="row product justify-content-around">
-  <div *ngFor='let currentProduct of products| async' name='featured-product' id="productCol">
+  <div *ngFor='let product of products| async' name='featured-product' id="productCol">
     <div class="col-4" (click)="goToDetailPage(product)">
-      <img src={{currentProduct.image}} alt="...">
-      <h3>{{currentProduct.model}}</h3>
-      <p>{{currentProduct.title}}</p>
+      <img src={{product.image}} alt="...">
+      <h3>{{product.model}}</h3>
+      <p>{{product.title}}</p>
       <!-- <p>Click for Details..</p>
       <div *ngIf="selectedProduct === currentProduct">
         <p>{{currentProduct.description}}</p>
