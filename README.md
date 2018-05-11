@@ -2,9 +2,9 @@
 
 #### By Matt Dowdney
 
-### This is a partial clone of the Roland US website from https://www.roland.com/us/ as viewed from a medium sized viewport(desktop/laptop).  The main objectives will be 1) resembling the main page from a component perspective(roughly); 2)connecting to  a product database to retrieve products' information (note: news and videos will not be in a database); 3)routing to different product pages dynamically.
+### This is a partial clone of the Roland US website from https://www.roland.com/us/ as viewed from a medium sized viewport(desktop/laptop).  The main objectives will be 1) resembling the main page from a component perspective(roughly); 2)connecting to  a product database to retrieve products' information (note: news and videos will not be in a database); 3)routing to different product pages dynamically. The only "fully" developed models and database are for the products.
 
-## Current User Stories
+## User Stories
 
 | View  | Feature | Component |
 | ----- | --- | --- |
@@ -18,11 +18,13 @@
 | Product | Selected  product should route to page of that product | Product-Details |
 | Authentication | User can dummy register a product (hollow function) | Login |
 
+To-do: Create a registration model and push actually registered devices to a database. 
+
 
 
 
 ## Setup/Installation Requirements
-* To view deployed site, visit: https://roland-us.firebaseapp.com/
+* To view deployed site, visit: https://roland-us.firebaseapp.com/ (user login requires google account)
 * To view project code, visit: https://github.com/dowdm/angular-roland.git
 * To view project from build, install nodejs, typescript and anglular cli. Then clone the project to your desktop from https://github.com/dowdm/angular-roland.git , navigating into the project folder from the command line. Run "npm install" from the command line and  build the database(see below). Finally  enter "ng serve --open" from the command line to open a browser and server, running the project.
 
