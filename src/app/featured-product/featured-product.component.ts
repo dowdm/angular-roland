@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import {Product} from '../models/product.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { ProductService } from '../product.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-featured-product',
@@ -11,10 +12,9 @@ import { ProductService } from '../product.service'
 })
 export class FeaturedProductComponent implements OnInit{
 
-  @Output () clickSender = new EventEmitter();
-  selectedProduct = null;
+currentRoute: string = this.router.url;
 
-constructor(private productService: ProductService) { }
+constructor(private router: Router, private productService: ProductService) { }
 
   products: FirebaseListObservable<any[]>;
 
@@ -22,12 +22,7 @@ constructor(private productService: ProductService) { }
       this.products = this.productService.getProducts();
     }
 
-  viewDetails(currentProduct){
-    if(this.selectedProduct === null) {
-      this.selectedProduct = currentProduct;
-    } else {
-      this.selectedProduct = null;
-    }
+  goToDetailPage(clickedProduct) {
+    this.router.navigate(['products', clickedProduct.$key]);
   }
-
 }
