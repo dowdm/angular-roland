@@ -2,7 +2,7 @@
   {{products.length}}
   <div *ngFor='let currentProduct of products| async'  name='featured-product' id="productCol">
 
-    <div  class="col" (click)="goToDetailPage(currentProduct)">
+    <div  *ngIf="currentProduct.id == 1 ||currentProduct.id == 4 || currentProduct.id == 5 "class="col" (click)="goToDetailPage(currentProduct)">
       <img src={{currentProduct.image}} alt="...">
       <p>Featured Product</p>
       <h3>{{currentProduct.model}}</h3>
