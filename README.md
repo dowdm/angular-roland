@@ -18,7 +18,7 @@
 | Product | Selected  product should route to page of that product | Product-Details |
 | Authentication | User can dummy register a product (hollow function) | Login |
 
-To-do: Create a registration model and push actually registered devices to a database.
+To-do: Create a registration model and push actually registered devices to a database. Create more data for other models and input into database and remove local child/master arrays.
 
 
 
