@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Video } from '../models/video.model';
 import { News } from '../models/news.model';
+import * as firebase from "firebase";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private user;
+
+    constructor() {}
+
+    ngDoCheck() {
+      this.user = firebase.auth().currentUser;
+    }
+  
+
+
   masterVideoArray: Video[] = [
     new Video("Roland TRS-8 Overview", "This video highlights the features of the new Roland TRS-8", "../assets/videostill.jpg" ),
     new Video("Roland AIRA", "This video highlights the features of the new Roland AIRA Series", "https://static.roland.com/assets/promos/jpg/promo_fv_tr-8s.jpg"  ),

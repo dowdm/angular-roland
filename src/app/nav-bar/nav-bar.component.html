@@ -8,6 +8,14 @@
   <a routerLink="artists">Artists</a>
   <a routerLink="blog">Blog</a>
   <a routerLink="news">New and Events</a>
-  <a routerLink="login">Login</a>
+  <!-- <a routerLink="login">Login</a> -->
+      <li *ngIf="isLoggedIn">
+        <a>{{userName}}</a>
+        <a (click)="logout()">Log out</a>
+      </li>
+      <li *ngIf ="!isLoggedIn">
+        <a (click)="login()">Log in</a>
+      </li>
+
   <input type="text" name="search" value=""placeholder="search">
 </nav>
